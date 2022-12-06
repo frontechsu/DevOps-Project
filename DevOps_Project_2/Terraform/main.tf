@@ -13,9 +13,9 @@ data "aws_ami" "amazon-linux" {
 }
 
 resource "aws_instance" "dev_machine" {
-  ami = data.aws_ami.amazon-linux.id
+  ami = ami-0f5e8a042c8bfcd5e
   instance_type = "t2.micro"
-  key_name = "euran-jenkins"
+  key_name = "ubunut"
 
   tags = {
     Environment = "dev"
